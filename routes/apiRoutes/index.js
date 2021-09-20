@@ -17,19 +17,19 @@ router.post("/notes", (req, res) => {
   }
 });
 
-router.delete("/notes/:id", (req, res) => {
-  console.log(req.params.id);
-  console.log(res);
+// router.delete("/notes/:id", (req, res) => {
+//   console.log(req.params.id);
+//   console.log(res);
 
-  const noteId = req.params.id;
+//   const noteId = req.params.id;
 
-  // const result = findById(req.params.id, notes);
+//   // const result = findById(req.params.id, notes);
 
-  if (noteId) {
-    res.json(noteId);
-  } else {
-    res.send(404);
-  }
-});
+//   if (noteId) {
+//     res.json(noteId);
+//   } else {
+//     res.send(404);
+//   }
+// });
 
 module.exports = router;
